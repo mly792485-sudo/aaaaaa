@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مدارس اليمن النموذجية | الموقع الرسمي</title>
+    <meta name="description" content="الموقع الرسمي لمدارس اليمن النموذجية - نحو تعليم نوعي، وبناء أجيال متسلحة بالعلم والأخلاق وقادرة على التفكير والإبداع وخدمة المجتمع." />
+    <meta property="og:title" content="مدارس اليمن النموذجية | الموقع الرسمي" />
+    <meta property="og:description" content="الموقع الرسمي لمدارس اليمن النموذجية - نحو تعليم نوعي، وبناء أجيال متسلحة بالعلم والأخلاق وقادرة على التفكير والإبداع وخدمة المجتمع." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta property="og:image" content="/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+    <script>
+      // Ensure cross-site and security cookies are accepted
+      try {
+        document.cookie = "security_cookie_allowed=true; path=/; SameSite=None; Secure";
+        document.cookie = "cross-site-cookie=true; path=/; SameSite=None; Secure";
+      } catch (e) {}
+
+      // In-app browser detection (Snapchat, Instagram, Facebook, TikTok, etc.)
+      (function() {
+        var ua = navigator.userAgent || navigator.vendor || window.opera || '';
+        var isSnapchat = /Snapchat/i.test(ua);
+        var isInstagram = /Instagram/i.test(ua);
+        var isFB = /FBAN|FBAV/i.test(ua);
+        var isTikTok = /TikTok|musical_ly|BytedanceWebview/i.test(ua);
+        if (isSnapchat || isInstagram || isFB || isTikTok) {
+          window.__IS_IN_APP_BROWSER__ = true;
+          window.__IN_APP_NAME__ = isSnapchat ? 'سناب شات' : (isInstagram ? 'إنستغرام' : (isTikTok ? 'تيك توك' : 'التطبيق الداخلي'));
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased font-sans transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

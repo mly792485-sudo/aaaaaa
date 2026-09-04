@@ -1,0 +1,302 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 680" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gold Gradients -->
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff4b8" />
+      <stop offset="25%" stop-color="#fdd835" />
+      <stop offset="50%" stop-color="#f5b300" />
+      <stop offset="75%" stop-color="#ffea79" />
+      <stop offset="100%" stop-color="#c68400" />
+    </linearGradient>
+
+    <linearGradient id="goldDark" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8c5800" />
+      <stop offset="30%" stop-color="#c68400" />
+      <stop offset="70%" stop-color="#ffdc48" />
+      <stop offset="100%" stop-color="#8a5300" />
+    </linearGradient>
+
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff194" />
+      <stop offset="35%" stop-color="#f9c824" />
+      <stop offset="70%" stop-color="#e39d04" />
+      <stop offset="100%" stop-color="#a46900" />
+    </linearGradient>
+
+    <!-- Navy Royal Blue Gradient -->
+    <linearGradient id="navyBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e2a6d" />
+      <stop offset="50%" stop-color="#081c4e" />
+      <stop offset="100%" stop-color="#041033" />
+    </linearGradient>
+
+    <!-- Red Book Gradient -->
+    <linearGradient id="yemenRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3333" />
+      <stop offset="60%" stop-color="#d60000" />
+      <stop offset="100%" stop-color="#990000" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="badgeShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <filter id="goldBevel" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <g filter="url(#badgeShadow)">
+    <!-- 1. White Outer Contour Outline (Die-Cut Sticker effect) -->
+    <path d="
+      M 250 15 
+      A 175 175 0 0 1 422 205
+      C 445 205 470 245 470 280
+      L 470 480
+      C 470 515 440 520 410 520
+      L 485 580
+      L 420 580
+      L 395 560
+      C 350 635 150 635 105 560
+      L 80 580
+      L 15 580
+      L 90 520
+      C 60 520 30 515 30 480
+      L 30 280
+      C 30 245 55 205 78 205
+      A 175 175 0 0 1 250 15 Z"
+      fill="#FFFFFF"
+    />
+
+    <!-- 2. UPPER CIRCULAR CREST -->
+    <!-- Outer Gold Ring -->
+    <circle cx="250" cy="205" r="168" fill="url(#goldDark)" stroke="#ffffff" stroke-width="2" />
+    <!-- Inner Gold Ring -->
+    <circle cx="250" cy="205" r="156" fill="url(#goldLight)" />
+    <circle cx="250" cy="205" r="144" fill="#080808" />
+    <!-- Crest Background Layer -->
+    <circle cx="250" cy="205" r="140" fill="#f8f9fa" />
+
+    <!-- Radiant Background Soft Glow in upper circle -->
+    <circle cx="250" cy="190" r="130" fill="#ffffff" />
+
+    <!-- 3. OPEN BOOK (Yemeni Flag: Red, White, Black) -->
+    <!-- Book Black Base Shadow Layer -->
+    <path d="
+      M 250 305
+      C 220 285 140 280 80 230
+      C 80 245 88 280 115 295
+      C 160 315 225 320 250 338
+      C 275 320 340 315 385 295
+      C 412 280 420 245 420 230
+      C 360 280 280 285 250 305 Z"
+      fill="#111111"
+    />
+
+    <!-- Book White Pages Border Layer -->
+    <path d="
+      M 250 296
+      C 222 278 142 272 86 224
+      C 84 235 92 268 118 284
+      C 162 305 226 308 250 326
+      C 274 308 338 305 382 284
+      C 408 268 416 235 414 224
+      C 358 272 278 278 250 296 Z"
+      fill="#FFFFFF"
+      stroke="#D1D5DB"
+      stroke-width="1.5"
+    />
+
+    <!-- Left Book Page (Red Wing) -->
+    <path d="
+      M 248 290
+      C 220 268 145 258 98 215
+      C 94 225 102 254 122 268
+      C 165 295 220 298 248 318 Z"
+      fill="url(#yemenRed)"
+      filter="url(#goldBevel)"
+    />
+
+    <!-- Right Book Page (Red Wing) -->
+    <path d="
+      M 252 290
+      C 280 268 355 258 402 215
+      C 406 225 398 254 378 268
+      C 335 295 280 298 252 318 Z"
+      fill="url(#yemenRed)"
+      filter="url(#goldBevel)"
+    />
+
+    <!-- 4. GOLDEN STUDENT SWOOSHES & ARCS -->
+    <!-- Left Golden Arc / Wing -->
+    <path d="
+      M 246 250
+      C 200 240 148 180 135 155
+      C 155 178 195 220 246 228 Z"
+      fill="url(#goldLight)"
+    />
+    <!-- Right Golden Arc / Wing -->
+    <path d="
+      M 254 250
+      C 300 240 352 180 365 155
+      C 345 178 305 220 254 228 Z"
+      fill="url(#goldLight)"
+    />
+
+    <!-- Center Student Head (Golden Glowing Sphere) -->
+    <circle cx="250" cy="180" r="30" fill="url(#goldLight)" stroke="url(#goldDark)" stroke-width="2" filter="url(#goldBevel)" />
+    <ellipse cx="244" cy="172" rx="10" ry="7" fill="#FFFBEB" opacity="0.85" />
+
+    <!-- 5. GRADUATION CAP (MORTARBOARD) -->
+    <!-- Cap Neck / Skull Base -->
+    <path d="
+      M 222 145
+      C 222 170 278 170 278 145
+      Z"
+      fill="#1A1A1A"
+    />
+    <!-- Cap Diamond Board -->
+    <polygon points="250,90 326,128 250,162 174,128" fill="#151515" stroke="#333333" stroke-width="2" />
+    <polygon points="250,94 320,128 250,158 180,128" fill="#262626" />
+
+    <!-- Red Button on Cap -->
+    <circle cx="250" cy="126" r="6" fill="#D60000" />
+    <circle cx="248" cy="124" r="2" fill="#FF8080" />
+
+    <!-- Red Tassel Cord & Fringe -->
+    <path d="M 250 126 Q 280 122 292 145" fill="none" stroke="#D60000" stroke-width="3.5" stroke-linecap="round" />
+    <!-- Tassel Fringe Body -->
+    <path d="
+      M 292 145
+      L 286 172
+      C 286 178 298 178 298 172
+      L 294 145 Z"
+      fill="#D60000"
+    />
+    <ellipse cx="292" cy="172" rx="5" ry="2" fill="#990000" />
+
+    <!-- 6. MIDDLE NAVY BLUE HERALDIC BANNER -->
+    <!-- Outer Golden Frame of Blue Banner -->
+    <path d="
+      M 60 380
+      C 60 365 75 350 90 350
+      L 410 350
+      C 425 350 440 365 440 380
+      L 440 480
+      C 440 500 425 515 405 515
+      L 95 515
+      C 75 515 60 500 60 480 Z"
+      fill="url(#goldDark)"
+    />
+    <path d="
+      M 64 382
+      C 64 370 76 355 90 355
+      L 410 355
+      C 424 355 436 370 436 382
+      L 436 478
+      C 436 496 424 511 405 511
+      L 95 511
+      C 76 511 64 496 64 478 Z"
+      fill="url(#goldLight)"
+    />
+
+    <!-- Main Navy Blue Surface -->
+    <path d="
+      M 72 388
+      C 72 376 82 364 96 364
+      L 404 364
+      C 418 364 428 376 428 388
+      L 428 472
+      C 428 488 418 498 402 498
+      L 98 498
+      C 82 498 72 488 72 472 Z"
+      fill="url(#navyBlue)"
+    />
+
+    <!-- Inner Golden Pinstripe inside Navy Blue Banner -->
+    <rect x="74" y="366" width="352" height="130" rx="14" fill="none" stroke="url(#goldLight)" stroke-width="1.5" opacity="0.6" />
+
+    <!-- Arabic Official Title: "مدارس اليمن النموذجية" -->
+    <text
+      x="250"
+      y="418"
+      text-anchor="middle"
+      fill="url(#goldLight)"
+      stroke="#8c5800"
+      stroke-width="0.8"
+      font-size="29"
+      font-weight="900"
+      font-family="'Cairo', 'Tajawal', 'Almarai', system-ui, -apple-system, sans-serif"
+    >
+      مدارس اليمن النموذجية
+    </text>
+
+    <!-- Yemen National Flag Horizontal Divider Bar -->
+    <g transform="translate(82, 438)">
+      <!-- Black Stripe -->
+      <rect x="0" y="0" width="110" height="6" rx="2" fill="#000000" stroke="#ffffff" stroke-width="0.5" />
+      <!-- White Stripe -->
+      <rect x="113" y="0" width="110" height="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="0.5" />
+      <!-- Red Stripe -->
+      <rect x="226" y="0" width="110" height="6" rx="2" fill="#D60000" stroke="#ffffff" stroke-width="0.5" />
+    </g>
+
+    <!-- English Official Title: "AL YEMEN MODEL SCHOOLS" -->
+    <text
+      x="250"
+      y="476"
+      text-anchor="middle"
+      fill="url(#goldLight)"
+      font-size="20"
+      font-weight="900"
+      font-family="'Montserrat', 'Arial Black', sans-serif"
+      letter-spacing="1.8"
+    >
+      AL YEMEN MODEL SCHOOLS
+    </text>
+
+    <!-- 7. BOTTOM GOLDEN RIBBON BANNER -->
+    <!-- Ribbon Left Folded Tail -->
+    <polygon points="40,545 100,535 90,575 30,590 55,565" fill="#8c5800" />
+    <polygon points="45,548 95,540 85,572 35,584 55,565" fill="url(#goldDark)" />
+
+    <!-- Ribbon Right Folded Tail -->
+    <polygon points="460,545 400,535 410,575 470,590 445,565" fill="#8c5800" />
+    <polygon points="455,548 405,540 415,572 465,584 445,565" fill="url(#goldDark)" />
+
+    <!-- Main Front Golden Ribbon Body -->
+    <path d="
+      M 75 540
+      C 150 515 350 515 425 540
+      C 440 558 440 575 425 595
+      C 350 625 150 625 75 595
+      C 60 575 60 558 75 540 Z"
+      fill="url(#goldRibbon)"
+      stroke="url(#goldDark)"
+      stroke-width="3"
+      filter="url(#goldBevel)"
+    />
+
+    <!-- Golden Highlight lines on ribbon curves -->
+    <path d="
+      M 90 548
+      C 160 528 340 528 410 548"
+      fill="none"
+      stroke="#fffab0"
+      stroke-width="2.5"
+    />
+
+    <!-- Ribbon Arabic Slogan: "— ⭐ معاً نحو مستقبل أفضل ⭐ —" -->
+    <text
+      x="250"
+      y="576"
+      text-anchor="middle"
+      fill="#081c4e"
+      font-size="22"
+      font-weight="900"
+      font-family="'Cairo', 'Tajawal', 'Almarai', system-ui, -apple-system, sans-serif"
+    >
+      — ★ معاً نحو مستقبل أفضل ★ —
+    </text>
+  </g>
+</svg>

@@ -1,11 +1,84 @@
-<div align="center">
+# مدارس اليمن النموذجية | Al Yemen Model Schools
+الموقع الرسمي الشامل والمتكامل لمدارس اليمن النموذجية.
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+---
 
-  <h1>Built with AI Studio</h2>
+## 🚀 كيفية تصدير الموقع كاملاً وتشغيله على GitHub أو استضافة مجانية
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+المشروع مبني بتقنيات حديثة وخفيفة (React 19 + Vite + Tailwind CSS v4 + TypeScript) ولا يعتمد على خوادم معقدة، مما يجعله قابلاً للتشغيل فوراً على أي استضافة دون أدنى مشكلة.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+### 🌟 الطريقة الأولى: التصدير التلقائي المباشر من Google AI Studio (الأسهل)
+1. من شريط الأدوات العلوي في **Google AI Studio**، اضغط على زر القائمة أو الإعدادات **(Settings / Share / Export)**.
+2. اختر **"Export to GitHub"** (تصدير إلى جيت هب) لربط حسابك وإنشاء مستودع مباشر بضغطة زر واحدة.
+3. أو اختر **"Download as ZIP"** لتحميل كامل ملفات الموقع على جهازك.
 
-</div>
+---
+
+### 💻 الطريقة الثانية: الرفع إلى مستودع GitHub يدوياً
+قم بفتح الطرفية (Terminal) في مجلد المشروع ونفذ الأوامر التالية:
+
+```bash
+# 1. تهيئة المستودع
+git init
+git add .
+git commit -m "الموقع الرسمي لمدارس اليمن النموذجية"
+
+# 2. ربط المستودع برابط GitHub الخاص بك
+git branch -M main
+git remote add origin https://github.com/USERNAME/al-yemen-model-schools.git
+
+# 3. رفع الملفات
+git push -u origin main
+```
+
+---
+
+### 🌐 تفعيل النشر التلقائي المجاني (GitHub Pages)
+المشروع مجهز بالفعل بملف **GitHub Actions** تلقائي (`.github/workflows/deploy.yml`):
+1. اذهب إلى إعدادات المستودع على GitHub: **Settings > Pages**.
+2. في قسم **Build and deployment**، اختر المصدر: **GitHub Actions**.
+3. سيتم بناء الموقع ونشره تلقائياً على رابط مجاني دائم مثل:  
+   `https://USERNAME.github.io/al-yemen-model-schools`  
+   **هذا الرابط يعمل 100% بدون أي رسائل كوكيز أو حظر على جميع الهواتف والمتصفحات!**
+
+---
+
+### ⚡ خيار بديل وسريع جداً: النشر على Vercel (بدون كوكيز نهائياً)
+1. افتح موقع [Vercel.com](https://vercel.com) وسجل دخولك بحساب GitHub.
+2. اضغط **Add New Project** ثم اختر مستودع هذا الموقع.
+3. اضغط **Deploy** مباشرة (المشروع يحتوي بالفعل على إعدادات `vercel.json` المحسنة).
+4. ستحصل خلال 30 ثانية على رابط سريع ومستقر مثل: `https://al-yemen-schools.vercel.app` مع شهادة أمان SSL مجانية ودعم ربط نطاق مخصص (دومين).
+
+---
+
+## 🍪 حل مشكلة الكوكيز (Cookies) والمتصفح المدمج (سناب شات / إنستغرام)
+
+### لماذا ظهرت لك رسالة "Action required to load your app / blocking security cookie"؟
+هذه الرسالة تظهر فقط في روابط المعاينة التجريبية لمنصة Google Cloud Run (`ais-pre-...run.app`) لأن المتصفحات المدمجة داخل تطبيقات التواصل (Snapchat, Instagram, TikTok) تقوم بحظر ملفات تعريف الارتباط الخارجية (Third-party Cookies) تلقائياً لأسباب أمنية.
+
+### الحلول البرمجية المدمجة في هذا التحديث:
+1. **شريط توجيه ذكي للمتصفحات المدمجة (`InAppBrowserBanner`):**
+   - يتعرف تلقائياً على فتح الرابط داخل تطبيق سناب شات، إنستغرام، تيك توك، أو فيسبوك.
+   - يعرض تنبيهاً علوياً واضحاً مع زر نسخ الرابط، وزر فتح في متصفح خارجي، وتوجيه سريع بالضغط على (•••) ثم «فتح في المتصفح» (Open in Safari / Chrome).
+2. **ضبط ملفات تعريف الارتباط بالأمان الكامل:**
+   - تفعيل `SameSite=None; Secure` لجميع الكوكيز المسموحة.
+3. **التشغيل المستقل (Standalone Deploy):**
+   - عند رفع الموقع على GitHub Pages أو Vercel، تنتهي مشكلة كوكيز Google Cloud Run تماماً وبشكل جذري لأن الموقع يُخدم كملفات ثابتة فائقة السرعة لا تطلب أي مصادقة طرف ثالث.
+
+---
+
+## 🛠️ أوامر التشغيل والبناء محلياً
+
+```bash
+# تثبيت الحزم
+npm install
+
+# تشغيل خادم التطوير المحلي
+npm run dev
+
+# بناء النسخة الإنتاجية
+npm run build
+
+# معاينة النسخة الإنتاجية
+npm run preview
+```

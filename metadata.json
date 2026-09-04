@@ -1,0 +1,7 @@
+{
+  "name": "مدارس اليمن النموذجية",
+  "description": "الموقع الرسمي لمدارس اليمن النموذجية - نحو تعليم نوعي، وبناء أجيال متسلحة بالعلم والأخلاق وقادرة على التفكير والإبداع وخدمة المجتمع.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
